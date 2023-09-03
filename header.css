@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 50px;
+    color:rgb(62, 62, 62) ;
+}
+
+h2{
+    font-size: 220px;
+    text-decoration:underline;
+    letter-spacing: 3px;
+    opacity: 7%;
+    margin-bottom: 0;
+}
+
+.header{
+    background-color:#000000;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header nav{
+    font-size: 0;
+}
+
+.header nav a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    margin:0 20px 0;
+    line-height: 5;
+    display: inline-block;
+}
+
+.header a:hover{
+    transition: .3s;
+    color: red;
+}
+
+.banner{
+    width: 100%;
+    margin: 0 0 50px;
+}
+
+.en-text{
+    position: relative;
+    margin-left: 14%;
+}
+
+.ct-text{
+    position: absolute;
+    bottom: -6%;
+    left:5%;
+}
+
+.footer{
+    background-color:black;
+    width: 100%;
+}
+
+.footer .container{
+    margin: auto;
+    width: 62.5%;
+    display: flex;
+    color:white;
+}
+
+.footer .logo{
+    margin: 25px 70px;
+}
+
+.footer .address{
+    margin: 10px 0 0;
+}
+
+.address p{
+    padding: 5px;
+}
+
+.footer .item{
+    width: 30%;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 10px 0 ;
+}
+
+.footer a{
+    font-weight: bolder;
+    text-decoration: none;
+    color:white;
+    line-height: 50px;
+}
+
+.footer .list{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .list a:hover{
+    transition: .3s;
+    color: red;
+}
+
+.footer .list ul{
+    list-style: none;
+}
+
+.footer .community{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0 0;
+}
+
+.footer .community a{
+    margin:0 20px;
+    height: fit-content;
+}
+
+.footer .item,.header,button{
+    font-weight: bolder;
+}
+
+.tibame{
+    font-weight: bold;
+    background-color:#85586F;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 20px 0;
+}
+

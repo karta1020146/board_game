@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>board_game_booking</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="header.css">
+    <script src="jQuery/js/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="booking-style.css">
+    <link rel="stylesheet" href="rwd-hf.css">
+    <link rel="stylesheet" href="rwd-booking.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html"><img src="img/logo/fire.svg" alt="logo"></a>
+        <nav>
+            <a href="index.html">首頁</a>
+            <a href="board-news.html">最新消息</a>
+            <a href="board-about.html">關於我們</a>
+            <a href="board-products.html">遊戲專區</a>
+            <a href="board-booking.html">線上預約</a>
+            <a href="board-qa.html">常見問題</a>
+            <a href="board-location.html">交通資訊</a>
+        </nav>
+    </div>
+
+    <div class="m-header">
+        <input type="checkbox" id="menu_control">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo/fire.svg" alt="logo">
+            </a>
+        </div>
+
+        <div class="container">
+            <div class="slogan">
+                <span>
+                    <a href="board-news.html">
+                        超值大放送 好禮送不停!!
+                    </a>
+                </span>
+            </div>
+            <div class="hb">
+                <label for="menu_control" class="menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+        </div>
+        <nav>
+            <a href="board-news.html">最新消息</a>
+            <a href="board-about.html">關於我們</a>
+            <a href="board-products.html">遊戲專區</a>
+            <a href="board-booking.html">線上預約</a>
+            <a href="board-qa.html">常見問題</a>
+            <a href="board-location.html">交通資訊</a>
+        </nav>
+    </div>
+
+
+    <div class="banner">
+        <em>
+            <div class="en-text">
+                <h2>Booking</h2>
+                <div class="ct-text">
+                    <h1>線上預約</h1>
+                </div>
+            </div>
+        </em>
+    </div>
+
+    <img src="img/booking/rose-g047b3f4a7_1280.png" alt="bgi" class="bgi-first">
+
+    <div class="booking">
+        <div class="container">
+            <div class="price">
+                <div class="item">
+                    <h3>﹙一﹚消費方式</h3>
+                    <p><em>
+                            <span>平日</span>:1小時50元 /人 包日200元
+                    </p>
+                    <p>
+                        <span>假日</span>:1小時60元 /人 包日240元</em>
+                    </p>
+                </div>
+            </div>
+
+            <form action="">
+                <h3>﹙二﹚表單填寫</h3>
+                <div class="form-main">
+                    <div class="name">
+                        訂位人姓名:
+                        <label for="name"></label><br>
+                        <input type="text" id="name" minlength="2" maxlength="5" placeholder="請輸入您的姓名">
+                    </div>
+                    <div class="date">
+                        預約日期:
+                        <label for="date"></label><br>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="time">
+                        預約時間:
+                        <label for="time"></label><br>
+                        <input type="time" id="time">
+                    </div>
+                    <div class="person">
+                        <label for="person">預計前往人數:<br>
+                            <select id="person">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8+</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="phone">
+                        手機:
+                        <label for="phone"></label><br>
+                        <input type="tel" id="phone" placeholder="請輸入您的手機">
+                    </div>
+                    <div class="email">
+                        e-mail信箱:
+                        <label for="email"></label><br>
+                        <input type="email" id="email" placeholder="請輸入您的信箱">
+                    </div>
+                    備註:
+                    <div class="remark">
+                        <div class="text">
+                            <label for="remark"></label>
+                            <textarea id="remark" rows="4" placeholder="請留下您想說的~"></textarea>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">立即預約</button>
+                    </div>
+                </div>
+                <div class="m-btn">
+                    <button type="submit">
+                        送出
+                    </button>
+
+                    <div class="m-rule">
+                        <ul id="all">
+                            <h3 id="open-btn"><span>"點擊"</span>展開注意事項</h3>
+                            <ul id="rule">
+                                <li><span>&otimes;</span> 計時以小時為單位，超過15分鐘以一小時計算。</li>
+                                <li><span>&otimes;</span> 注意保護店內的遊戲元件和設備，避免損壞或損失。 </li>
+                                <li><span>&otimes;</span> 如果有任何問題或疑問，請向店員尋求幫助和解答。</li>
+                                <li><span>&otimes;</span> 在遊戲期間保持乾淨和整潔，避免飲食或飲料灑落在遊戲桌上。</li>
+                                <li><span>&otimes;</span> 注意使用音量適中的語音和避免過度喧嘩，以不打擾其他玩家。</li>
+                                <li><span>&otimes;</span> 尊重店家的販售政策和價格，遵守購買和退換貨物的相關規定。</li>
+                                <li><span>&otimes;</span> 若有預約遊戲桌或參加活動，請準時到達或提前通知店家。</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="rule">
+            <h3>注意事項</h3>
+            <ul>
+                <li><span>&otimes;</span> 計時以小時為單位，超過15分鐘以一小時計算。</li>
+                <li><span>&otimes;</span> 注意保護店內的遊戲元件和設備，避免損壞或損失。 </li>
+                <li><span>&otimes;</span> 如果有任何問題或疑問，請向店員尋求幫助和解答。</li>
+                <li><span>&otimes;</span> 在遊戲期間保持乾淨和整潔，避免飲食或飲料灑落在遊戲桌上。</li>
+                <li><span>&otimes;</span> 注意使用音量適中的語音和避免過度喧嘩，以不打擾其他玩家。</li>
+                <li><span>&otimes;</span> 尊重店家的販售政策和價格，遵守購買和退換貨物的相關規定。</li>
+                <li><span>&otimes;</span> 若有預約遊戲桌或參加活動，請準時到達或提前通知店家。</li>
+            </ul>
+            <img src="img/booking/floral-g681b3802c_1280.png" alt="bgi" class="bgi-last">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo/fire.svg" alt="logo">
+                </a>
+            </div>
+            <div class="address item">
+                <div class="time">
+                    <p>地址： 320桃園市中壢區復興路46號9樓</p>
+                    <p>營業時間： 09：00～22：30 (每周二公休)</p>
+                    <p>電話： 03-425 8183</p>
+                </div>
+            </div>
+            <div class="list item">
+                <ul>
+                    <li><a href="#">員工專區</a></li>
+                    <li><a href="#">人才招募</a></li>
+                    <li><a href="#">加盟合作</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">意見箱</a></li>
+                    <li><a href="#">使用者條款</a></li>
+                    <li><a href="#">隱私權政策</a></li>
+                </ul>
+            </div>
+            <div class="community item">
+                <a href="#"><img src="img/footer/facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="img/footer/instagram.svg" alt="instagram"></a>
+                <a href="#"><img src="img/footer/twitter.svg" alt="twitter"></a>
+                <a href="#"><img src="img/footer/line.svg" alt="line"></a>
+            </div>
+        </div>
+        <div class="m-community">
+            <a href="#"><img src="img/footer/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="img/footer/instagram.svg" alt="instagram"></a>
+            <a href="#"><img src="img/footer/twitter.svg" alt="twitter"></a>
+            <a href="#"><img src="img/footer/line.svg" alt="line"></a>
+        </div>
+        <div class="tibame">
+            本網站為緯育TibaMe【第86期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。
+        </div>
+    </div>
+
+    <div id="scrollToTop" class="scroll-to-top">Top
+    </div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        document.getElementById('scrollToTop').addEventListener('click', scrollToTop);
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#rule').hide();
+
+            $('#open-btn').click(function () {
+                $('#rule').toggle('middle');
+            });
+        });
+    </script>
+</body>
+
+</html>

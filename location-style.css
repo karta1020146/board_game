@@ -1,0 +1,120 @@
+        .m-header,
+        .m-map,
+        .m-community,
+        .m-container{
+            display: none;
+        }
+
+        h1{
+            font-size: 50px;
+            color:rgb(23, 23, 23);
+        }
+
+        h2{
+            font-size: 220px;
+            text-decoration:underline;
+            letter-spacing: 3px;
+            opacity: 12%;
+            margin-bottom: 0;
+        }
+
+        h3{
+            color:rgb(23, 23, 23);
+            font-size: 50px;
+            font-style: italic;
+            text-align: center;
+            margin:20px 0 35px;
+        }
+
+        .bgi-first{
+            width: 100%;
+            opacity: 5%;
+            position: absolute;
+            top: 110px;
+            z-index: 0;
+        }
+
+        .location{
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .location span{
+            color: red;
+        }
+
+        .location .container-iframe{
+            width: 62.5%;
+            display: flex;
+            margin: auto;
+        }
+
+        .location .container-iframe .map{
+            width: 65%;
+            box-sizing: border-box;
+            border-radius: 15px;
+            margin-right: 5%;
+        }
+
+        .location .map iframe{
+            width: 100%;
+            border-radius: 18px;
+            vertical-align: bottom;
+        }
+
+        .location .container-iframe .time{
+            width: 30%;
+            border-radius: 20px;
+            box-sizing: border-box;
+            font-size: 22px;
+            font-weight: bolder;
+            padding: 0 20px;
+            line-height:2;
+        }
+
+        .location .ways{
+            width: 62.5%;
+            font-size: 24px;
+            font-weight: bolder;
+            line-height:2;
+            margin: auto;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        .ways li{
+            list-style: none;
+        }
+
+        html{
+            background-color: #D0B8A8 ;
+        }
+
+        .location .container-iframe .time,
+        .ways,
+        .map{
+            box-sizing: border-box;
+            border: 2px solid;
+            background-color:#f8f0eb;
+        }   
+
+        .scroll-to-top{
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            font-size: 30px;
+            font-weight: bolder;
+            background-color: #85586F;
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 100;
+            }

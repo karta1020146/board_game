@@ -1,0 +1,151 @@
+.m-header,
+.m-community,
+.service h3{
+    display: none;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.about{
+    margin: 40px 0;
+    width: 100%;
+    position: relative;
+    
+}
+
+.bgi-first{
+    width: 15%;
+    opacity: 10%;
+    position: absolute;
+    right: 15px;
+    top: 200px;
+    z-index: 0;
+}
+
+.group{
+    width: 62.5%;
+    margin: auto;
+}
+
+.group img{
+    border-radius: 10px;
+    width: 100%; 
+    position: relative;
+    z-index: 1;
+}
+
+.about > p{
+    margin: auto;
+    font-size: 28px;
+    width:50%;
+    letter-spacing:3px;
+    line-height: 50px;
+    padding:15px 0;
+}
+
+.about .service{
+    width: 62.5%;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto ;
+}
+
+.service .list{
+    width: 100%;
+    text-align: center;
+}
+
+.about .service .list a{
+    display: inline-block;
+    font-size:30px ;
+    border-top-right-radius:50% ;
+    border-bottom-left-radius:50% ;
+    border-bottom: 7px solid white;
+    background-color:#85586F;
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding: 18px;
+    margin: 20px 30px ;
+}
+
+.service .list a:hover{
+    background-color:black;
+    transition: .3s;
+}
+
+.connection .detail{
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.service .detail{
+    font-weight: bolder;
+    line-height:2;
+    text-align: left;
+    box-sizing: border-box;
+    margin:0 15px;
+}
+
+.service .connection{
+    display: flex;
+    flex-direction: column;
+}
+
+.connection .project{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 26px;
+    margin: 20px 0 30px;
+}
+
+.connection .detail{
+    padding:10px ;
+    border: 2px solid;
+    background-color:#f8f0eb;
+}
+
+.service ul{
+    list-style: none;
+}
+
+.connection .detail a{
+    color: blue;
+}
+
+.about .bgi-last{
+    width: 20%;
+    opacity: 10%;
+    z-index: 0;
+    position: absolute;
+    left: 20px;
+    bottom: 150px;
+}
+
+html{
+    background-color: #D0B8A8;
+}
+
+.scroll-to-top{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: #85586F;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+    }

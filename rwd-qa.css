@@ -1,0 +1,58 @@
+@media screen and (max-width:1024px) {
+    article .title .pic{
+        width: 6%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    article{
+        width: 100%;
+        background-color: transparent;
+    }
+
+    article #all{
+        width: 80%;
+        border-top-left-radius:40px ;
+        border-top-right-radius:40px ;
+        border-bottom-left-radius:40px ;
+        border-bottom-right-radius:40px;
+        margin: auto;
+        background-color:#f8f0eb;
+    }
+
+    .qa{
+        padding: 20px 12px;
+    }
+    
+
+    .title .txt h3{
+        font-size: 26px;
+    }
+
+    article .title .pic{
+        width: 4%;
+    }
+
+    .question{
+        font-size: 20px;
+    }
+
+    .question img{
+        margin-right: 15px;
+    }
+
+    .answer{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .qa{
+        padding: 20px 17px;
+    }
+
+    article .title .pic{
+        width: 7%;
+    }
+
+}

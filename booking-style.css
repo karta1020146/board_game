@@ -1,0 +1,191 @@
+br,
+.m-header,
+.m-rulr,
+.m-btn,
+.m-community{
+    display: none;
+}
+
+.bgi-first{
+    width: 20%;
+    transform: scaleX(-1);
+    position: absolute;
+    right: 0;
+    top: 170px;
+    opacity: 15%;
+    z-index: -1;
+}
+
+.booking{
+    width: 100%;
+}
+
+.price{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 90px;
+    justify-content: center;
+}
+
+.price .item{
+    font-size: 35px;
+    letter-spacing: 1px;
+    line-height:1.5;
+    font-weight: bolder;
+}
+
+.price .item span{
+    color: red;
+}
+
+input:hover,
+textarea:hover,
+select:hover{
+    box-shadow: 0px 5px 5px 0px rgb(172, 172, 172);
+    }
+
+.booking form{
+    width: 62.5%;
+    margin:auto;
+}
+
+h3{
+    font-size: 45px;
+    text-align: center;
+    padding: 0 0 40px;
+}
+
+.form-main{
+    padding: 30px;
+    background-color:#f8f0eb;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 70%;
+    margin:auto ;
+    box-sizing: border-box;
+    font-weight: br;
+}
+
+form,
+.form-main input,
+select,
+textarea{
+    width: 100%;
+    margin: 15px 0;
+    font-size: 22px;
+    font-weight: bolder;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.remark{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remark .text{
+    width: 100%;
+}
+
+form{
+    border:none;
+
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+.remark .btn button{
+    bottom: 32px;
+    right: 0px;
+}
+
+.btn button{
+    font-size: 24px;
+    border: 3px;
+    background-color:black;
+    color: white;
+    border-radius: 10px;
+    padding:10px;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    background-color:green;
+    transition:background-color .2s 0s ease;
+}
+
+.btn button:active{
+    color:white;
+}
+
+.rule{
+    width: 100%;
+    width: fit-content;
+    margin: auto;
+    margin-top:20px ;
+    margin-bottom:40px ;
+}
+
+.rule h3{
+    text-align: center;
+    font-size: 45px;
+    padding: 20px 0;
+}
+
+.rule ul{
+    list-style: none;
+    border: 2px solid;
+    border-radius:20px;
+    background-color:#f8f0eb;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    box-sizing: border-box;
+
+}
+
+.rule li span{
+    color: red;
+    font-size: 35px;
+}
+
+.bgi-last{
+    width: 20%;
+    opacity: 15%;
+    position: absolute;
+    left: 50px;
+    bottom: -1000px;
+    z-index: -1;
+}
+
+html{
+    background-color: #D0B8A8 ;
+}
+
+.scroll-to-top{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: #85586F;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+    }

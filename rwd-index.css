@@ -1,0 +1,618 @@
+@media screen and (max-width:1430px) {
+
+    .fontfirst,
+    .fontlast,
+    .footer .logo,
+    .bgi-last,
+    .bgi-first,
+    .container .community{
+        display: none;
+    }
+    .pre-sale button:hover{
+        background-color: black;
+        color: white;
+    }
+    
+}
+
+@media screen and (max-width:767px) {
+    .header,
+    .card .data,
+    .pre-sale .txt p,
+    .activity-img,
+    .env{
+        display: none;
+    }
+
+    .full-screen .pic{
+        top: -15%;
+        width:70%;
+    }
+
+    .close{
+        width: 35px;
+    }
+
+    h2{
+        font-style: italic;
+        font-size: 35px;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    .m-header{
+        display:flex;
+        width: 100%;
+        height: 80px;
+        background-color:black;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+    }   
+
+    .m-header > .logo{
+        padding:5px;
+        box-sizing: border-box;
+    }
+
+    .m-header .container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .m-header .slogan{
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+    .slogan span{
+        padding:0 2px;
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .m-header .slogan span a{
+        text-decoration: none;
+        color: white;
+        text-shadow:
+        0 0 5px rgba(255, 65, 65, 1),
+        0 0 10px rgba(255, 65, 65, 1),
+        0 0 10px rgba(255, 65, 65, 1),
+        0 0 40px rgba(255, 65, 65, 1);
+        animation:color 3s linear infinite;
+    }
+
+    @keyframes color{
+        0%{opacity:1;}
+        90%{opacity:0;}
+        100%{
+        color:#232323;}
+    }  
+
+    .hb{
+        width: 40px;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+
+    #menu_control{
+        position: absolute;
+        z-index: -999;
+        opacity: 0;
+    }
+
+    .menu_btn{
+        display: block;
+        background-color: black;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        box-sizing: border-box;
+    }
+
+    .menu_btn span{
+        background-color:white;
+        width: 80%;
+        height: 4px;
+        position: absolute;
+        margin: auto;
+        inset: 0;
+    }
+
+    .menu_btn span:nth-child(1){
+        translate:0 -10px ;
+        transition: translate .2s .2s,
+                    rotate .2s 0s;
+    }
+
+    .menu_btn span:nth-child(2){
+        opacity: 1;
+        transition: opacity .4s;
+    }
+
+    .menu_btn span:nth-child(3){
+        translate:0 10px ;
+        transition: translate .2s .2s,
+                    rotate .2s 0s;
+    }
+
+    #menu_control:checked ~ .container .menu_btn span:nth-child(1){
+        translate:0 0 ;
+        rotate: 45deg;
+        transition: translate .2s .2s,
+                    rotate .2s .4s;
+    }
+
+    #menu_control:checked ~ .container .menu_btn span:nth-child(2){
+        opacity: 0%;
+        transition: opacity .2s;
+    }
+
+    #menu_control:checked ~ .container .menu_btn span:nth-child(3){
+        translate:0 0 ;
+        rotate: -45deg;
+        transition: translate .2s .2s,
+                    rotate .2s .4s;
+    }
+
+    /* .menu_btn::before{
+        content: '';
+        position: absolute;
+        height: 5px;
+        left: 2px;
+        width: 36px;
+        background-color: white;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        box-shadow: 
+        0px 13px 0px white,
+        0px -13px 0px white;
+    } */
+
+    .m-header nav{
+        background-color: black;
+        opacity: 95%;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        z-index: 5;
+        top: 80px;
+        left: -100%;
+        transition: .5s;
+    }
+
+    .m-header nav a{
+        display: block;
+        text-decoration: none;
+        font-size: 18px;
+        padding:20px 0;
+        border-bottom: 1px solid white;
+        text-align: center;
+        color: white;
+    }
+
+    #menu_control:checked ~ nav{
+        left: 0;
+        transition: .5s;
+    }
+
+    .banner{
+        width: 100%;
+        margin: 80px 0 15px;
+    }
+
+    .bannercenter{
+        width: 100%;
+    }
+
+    .slide .item img {
+    border-radius: 0px;
+    }
+
+    .m-main-news{
+        font-weight: normal;
+        display: block;
+        font-size: 18px;
+        width: 100%;
+        background-color:#f8f0eb;
+    }
+
+    .m-main-news h4{
+        font-size: 20px;
+    }
+
+    .m-main-news h5{
+        font-size: 18px;
+        padding:5px 0 ;
+    }
+
+    .m-main-news a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .m-main-news article{
+        width: 100%;
+    }
+
+    .m-main-news section
+    {
+        padding: 15px;
+    }
+
+    .m-main-news .detail{
+        letter-spacing: 1.2px;
+    }
+
+    .m-main-news section p{
+        color: #000000;
+        font-size: 20px;
+        padding: 5px 0;
+    }
+
+    .m-main-news p span{
+        font-weight: bolder;
+        font-size: 24px;
+    }
+
+    .m-main-news h3{
+        font-size: 20px;
+        padding: 20px 0;
+    }
+
+    .m-main-news h3 span{
+        color:red;
+        font-size: 22px;
+    }
+
+    .m-main-news .btn{
+        padding: 0 5px 5px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .m-main-news button{
+        display: block;
+        font-size: 24px;
+        padding: 10px;
+        border: none;
+        background-color:transparent;
+        color:black;
+    }
+
+    .pre-sale{
+        background: none;
+        width: 100%;
+        margin: auto;
+    }
+
+    .pre-sale .box{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+
+    .pre-sale .card{
+        border-radius: 10px;
+        border: 1px solid;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pre-sale .img{
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .pre-sale .img img{
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 0px;
+        width: 100%;
+    }
+
+    .detail-point{
+        color: rgba(255, 255, 255, 0.549);
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 5px;
+        display: block;
+        position: absolute;
+        height: 100%;
+        writing-mode:vertical-lr ;
+        left: 5px;
+        transition: .4s;
+    }
+
+    .img input{
+        display: block; 
+        position: absolute;
+        z-index: -2;
+        opacity: 0;
+    }
+
+    .detail-control{
+        display: block; 
+        width: 100%;
+        height: 100%;
+        font-size: 100px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .text-detail{
+        border-top-left-radius:24px;
+        border-top-right-radius:24px;
+        font-weight: normal;
+        display: flex; 
+        align-items:flex-end;
+        position: absolute;
+        background-color:rgba(0, 0, 0, 0.383);
+        color: white;
+        height: 100%;
+        font-size: 18px;
+        line-height: 1.5;
+        padding:5px;
+        letter-spacing:2px;
+        bottom: -150%;
+        transition: .4s;
+    }
+
+    #detail:checked ~ .text-detail,
+    #detail-sec:checked ~ .text-detail{
+        bottom: 0;
+        transition: .4s;
+    }
+
+    #detail:checked ~ .detail-point
+    {
+        left:-50px;
+        transition: .4s;
+    }
+
+    .card .m-data{           
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px ;
+        line-height:1.6;
+        background-color:#f8f0eb;
+        border-radius:10px ;
+        box-sizing: border-box;
+
+    }
+
+    .m-data h3{
+        font-size: 20px;
+        padding: 5px 0;
+    }
+
+    .m-data p{
+        text-align: center;
+        width: 100%;
+        padding:0 0 10px;
+    }
+
+    .m-data .date{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .date span{
+        font-size: 20px;
+    }
+
+    .date button{
+        margin: auto;
+        font-size: 18px;
+        border-radius: 7px;
+    }
+
+    .env-slide,
+    .env-slide h2{
+    display: block;
+    }
+
+    .owl-act{
+        width: 100%;
+        margin: 0 0 40px;
+    }
+
+    .owl-act .owl-nav{
+        font-size: 50px;
+        margin:0;
+    }
+
+    .owl-nav span{
+        background-color:#85586F;
+        color: white;
+        padding:0 20px ;
+    }
+
+    .owl-nav span:active{
+        background-color: black;
+    }
+
+    .owl-act .owl-dots{
+        display: none;
+    }
+
+    .m-game{
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+        position: relative;
+    }
+
+    .m-booking{
+        display: block;
+        width: 100%;
+        position: relative;
+        margin: 20px 0;
+    }
+
+    .m-booking p,
+    .m-game p{
+        font-family: 'RocknRoll One', sans-serif;                
+        letter-spacing: 2px;
+        color:white;
+        position: absolute;
+        z-index: 1;
+        right: 3%;
+        bottom: 5%;
+        font-size: 50px;
+        font-weight: normal;
+    }
+
+    .m-game img,
+    .m-booking img{
+        width: 100%;
+        opacity: 80%;
+    }
+
+    .footer{
+        display: block;
+        width: 100%;
+    }
+
+    .footer .container{
+        background-color:black;
+        width: 90%;
+    }
+
+    .container .item{
+        width: 50%;
+        font-size: 14px;
+    }
+
+    .container .list{
+        order:0;
+    }
+
+    .container .address{
+        display: flex;
+        line-height: 1.4;
+        order:1;
+    }
+
+    .address .time{
+        margin: auto;
+    }
+
+    .m-community{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        padding: 15px 0 0;
+    }
+
+    .tibame{
+        font-size: 14px;
+    }
+
+    .scroll-to-top{
+        position: fixed;
+        bottom: 100px;
+        right: 20px;
+        font-size: 20px;
+        font-weight: bolder;
+        background-color: #85586F;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        cursor: pointer;
+        z-index: 3;
+    }
+}
+
+@media screen  and (max-width:710px) {
+    .slogan span{
+        font-size: 35px;
+    }
+}
+
+@media screen  and (max-width:600px) {
+    .slogan span{
+        font-size: 28px;
+    }
+}
+
+@media screen  and (max-width:520px) {
+    .slogan span{
+        font-size: 22px;
+    }
+}
+
+@media screen  and (max-width:480px) {
+    .close{
+        width: 30px;
+    }
+
+    .detail-point{
+        font-size: 13px;
+    }
+
+    .text-detail{
+        font-size: 13px;
+    }
+    
+    .txt h3{
+        font-size: 15px;
+    }
+
+    .date span{
+        font-size: 15px;
+    }
+
+    .date button{
+        font-size: 13px;
+    }
+
+    .m-booking p,
+    .m-game p{
+        font-size: 40px;
+    }
+}
+
+@media screen  and (max-width:460px) {
+    .slogan span{
+        font-size: 18px;
+    }
+}
+
+@media screen  and (max-width:405px) {
+    .slogan span{
+        font-size: 16px;
+    }
+
+    .close{
+        width: 26px;
+    }
+}
+
+@media screen  and (max-width:380px) {
+    .slogan span{
+        font-size: 14px;
+    }
+
+    .close{
+        width: 26px;
+    }
+}

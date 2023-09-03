@@ -1,0 +1,121 @@
+@media screen and (max-width:767px) {
+    .rule,
+    .form-main .btn{
+        display:none ;
+    }
+
+    br{
+        display:block;
+    }
+
+    .price{
+        margin: 40px 0;
+    }
+
+    .price .item{
+        font-size: 18px;
+    }
+
+    h3{
+        padding:0 0 20px;
+    }
+
+    .container form{
+        width: 100%;
+        margin: 30px 0 ;
+    }
+
+    .form-main{
+        width: 80%;
+        border-radius: 7px;
+        border: 1px solid;
+        font-size: 16px;
+        background-color:#f8f0eb;
+    }
+
+    .form-main input,
+    select,
+    textarea{
+        border-radius: 5px;
+        width: 100%;
+        margin: 12px 0;
+        font-size: 16px;
+    }
+
+    textarea{
+        width:100%;
+    }
+
+    .m-btn{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .m-btn button{
+        font-size: 20px;
+        padding: 8px 30px;
+        margin: 15px 0;
+        border: 0;
+        border-top-right-radius:50% ;
+        border-bottom-left-radius:50% ;
+        border-bottom: 7px solid white;
+        background-color:#85586F;
+        color:white;
+    }
+
+    .m-rule{
+        display: block;
+        width: 100%;
+    }
+
+    .m-rule h3{
+        padding:15px 0;
+    }
+
+    .m-rule h3 span{
+        color: red;
+    }
+
+    .m-rule #rule{
+        width: fit-content;
+        margin: auto;
+    }
+
+    .m-rule li{
+        padding: 4px 0;
+        font-size: 22px;
+        text-align: left;
+        list-style: none;
+    }
+
+    .m-rule li span{
+        color: red;
+    }
+}
+
+@media screen and (max-width:540px) {
+    h2{
+        font-size: 75px;
+    }
+
+    .m-rule h3{
+        font-size: 20px;
+    }
+
+    .m-rule li{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .m-rule li{
+        font-size: 17px;
+    }
+}
+
+/* @media screen and (max-width:414px) {
+    .m-rule li{
+        font-size: 12px;
+    }
+} */

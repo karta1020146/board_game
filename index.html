@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>play_board_game</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="jQuery/js/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="index-style.css">
+
+    <!-- 輪播 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- 字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="rwd-index.css">
+</head>
+
+<body>
+
+    <div class="full-screen">
+        <div class="pic">
+            <a href="board-news.html">
+                <img src="img/Group 25.png" alt="news-img">
+            </a>
+            <div class="close">
+                <img src="img/close-filled.svg" alt="close-img" class="close-btn">
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <a href="index.html"><img src="img/logo/fire.svg" alt="logo"></a>
+        <nav>
+            <a href="index.html">首頁</a>
+            <a href="board-news.html">最新消息</a>
+            <a href="board-about.html">關於我們</a>
+            <a href="board-products.html">遊戲專區</a>
+            <a href="board-booking.html">線上預約</a>
+            <a href="board-qa.html">常見問題</a>
+            <a href="board-location.html">交通資訊</a>
+        </nav>
+    </div>
+
+    <div class="m-header">
+        <input type="checkbox" id="menu_control">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo/fire.svg" alt="logo"></a>
+        </div>
+
+        <div class="container">
+            <div class="slogan">
+                <span>
+                    <a href="board-news.html">
+                        超值大放送 好禮送不停!!
+                    </a>
+                </span>
+            </div>
+            <div class="hb">
+                <label for="menu_control" class="menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+        <nav>
+            <a href="board-news.html">最新消息</a>
+            <a href="board-about.html">關於我們</a>
+            <a href="board-products.html">遊戲專區</a>
+            <a href="board-booking.html">線上預約</a>
+            <a href="board-qa.html">常見問題</a>
+            <a href="board-location.html">交通資訊</a>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <div class="pic fontfirst">
+            <img src="img/logo/play.svg" alt="play-img">
+        </div>
+        <div class="pic bannercenter">
+            <div id="owl-demo" class="owl-carousel owl-theme slide">
+                <div class="item"><img src="img/banner/board1.jpg" alt="banner-img"></div>
+                <div class="item"><img src="img/banner/board2.jpg" alt="banner-img"></div>
+                <div class="item"><img src="img/banner/board3.jpg" alt="banner-img"></div>
+                <div class="item"><img src="img/banner/board4.jpg" alt="banner-img"></div>
+            </div>
+        </div>
+        <div class="pic fontlast">
+            <img src="img/logo/friends.svg" alt="friends-img">
+        </div>
+    </div>
+
+    <div class="m-main-news">
+        <h2>最新消息</h2>
+        <article>
+            <section>
+                <a href="board-news.html">
+                    <h5>
+                        📌置頂
+                    </h5>
+                    <p>
+                        <span>2023/03/01</span>
+                    </p>
+                    <h3>
+                        <span>【重要公告】</span>超值大放送! 好禮送不停
+                    </h3>
+                </a>
+            </section>
+            <hr>
+            <section>
+                <a href="board-news.html">
+                    <p>
+                        <span>
+                            2023/08/11
+                        </span>
+                    </p>
+                    <h3>
+                        <span>【活動】</span>幸運抽抽樂，好禮不間斷
+                    </h3>
+                </a>
+            </section>
+            <hr>
+            <section>
+                <a href="board-news.html">
+                    <p>
+                        <span>
+                            2023/07/11
+                        </span>
+                    </p>
+                    <h3>
+                        <span>【活動】</span>卡坦島爭霸賽，等你來挑戰~
+                    </h3>
+                </a>
+            </section>
+            <div class="btn">
+                <a href="board-news.html"><button>More...</button></a>
+            </div>
+        </article>
+    </div>
+
+    <div class="pre-sale">
+        <h2>預計發售</h2>
+        <div class="box">
+            <div class="card">
+                <div class="img">
+                    <input type="checkbox" id="detail">
+                    <label for="detail" class="detail-control"></label>
+                    <p class="detail-point">點擊圖片展開介紹</p>
+                    <div class="text-detail">
+                        <p>《閉門恐懼》是一款令人毛骨悚然的桌上遊戲。這個遊戲帶領玩家進入一個充滿恐怖和神秘的世界。遊戲的目標是探索一扇神秘的門，這扇門據說通向另一個恐怖的維度。</p>
+                    </div>
+                    <img src="img/pre-sale/pexels-thirdman-54079332.jpg" alt="door">
+                </div>
+                <div class="data">
+                    <div class="txt">
+                        <h3>閉門恐懼（Door of Dread）官方繁體中文版</h3>
+                        <p>《閉門恐懼》是一款令人毛骨悚然的桌上遊戲。這個遊戲帶領玩家進入一個充滿恐怖和神秘的世界。遊戲的目標是探索一扇神秘的門，這扇門據說通向另一個恐怖的維度。</p>
+                    </div>
+                    <div class="date">
+                        <p><span>預定發售：2023年10月</span><button>立即預購</button></p>
+                    </div>
+                </div>
+                <div class="m-data">
+                    <div class="txt">
+                        <h3>閉門恐懼（Door of Dread）<br>官方繁體中文版</h3>
+                    </div>
+                    <div class="date">
+                        <p>
+                            <span>預定發售：2023年10月</span>
+                        </p>
+                        <p>
+                            <button>立即預購</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <label for="detail-sec" class="detail-control"></label>
+                    <input type="checkbox" id="detail-sec">
+                    <!-- <p class="detail-point">點擊圖片展開介紹</p> -->
+                    <p class="text-detail">
+                        在《忍者傳奇》中，玩家將面對各種挑戰，包括與其他浪人的對決以及解謎和探索古老的神秘遺跡。遊戲中充滿了策略和决策的考驗，玩家需要智慧和勇氣來面對困難並取得勝利。</p>
+
+                    <img src="img/pre-sale/pexels-sachith-ravishka-kodikara-5971314.jpg" alt="ninja">
+                </div>
+                <div class="data">
+                    <div class="txt">
+                        <h3>忍者傳奇（Ninja Legends）官方繁體中文版</h3>
+                        <p>在《忍者傳奇》中，玩家將面對各種挑戰，包括與其他浪人的對決以及解謎和探索古老的神秘遺跡。遊戲中充滿了策略和决策的考驗，玩家需要智慧和勇氣來面對困難並取得勝利。</p>
+                    </div>
+                    <div class="date">
+                        <p><span>預定發售：2023年11月</span><button>立即預購</button></p>
+                    </div>
+                </div>
+                <div class="m-data">
+                    <div class="txt">
+                        <h3>忍者傳奇（Ninja Legends）<br>官方繁體中文版</h3>
+                    </div>
+                    <div class="date">
+                        <p>
+                            <span>預定發售：2023年11月</span>
+                        </p>
+                        <p>
+                            <button>立即預購</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="env-slide">
+        <h2>店內&活動照片</h2>
+        <div class="owl-carousel owl-theme owl-act">
+            <div class="item">
+                <img src="img/env/1684308993300-0d2a33f4f1f04376addf432872ccad3b-800x533.jpg" alt="env-img">
+            </div>
+            <div class="item">
+                <img src="img/env/pexels-kevin-bidwell-1373100.jpg" alt="env-img">
+            </div>
+            <div class="item">
+                <img src="img/env/restaurant-1837150_1280.jpg" alt="env-img">
+            </div>
+            <div class="item">
+                <img src="img/activity-img/200710-fitch-family-game-jm-1050.webp" alt="activity-img">
+            </div>
+            <div class="item">
+                <img src="img/activity-img/istockphoto-484050552-612x612.jpg" alt="activity-img">
+            </div>
+            <div class="item">
+                <img src="img/activity-img/istockphoto-1364431292-612x612.jpg" alt="activity-img">
+            </div>
+            <div class="item">
+                <img src="img/activity-img/pexels-kevin-malik-8762824.jpg" alt="activity-img">
+            </div>
+            <div class="item">
+                <img src="img/activity-img/pexels-pavel-danilyuk-8111367.jpg" alt="activity-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="m-game">
+        <a href="board-products.html">
+            <p>遊戲專區➜</p>
+            <img src="img/m-index/play.png" alt="game-img">
+        </a>
+    </div>
+
+    <div class="m-booking">
+        <a href="board-booking.html">
+            <p>立即預約➜</p>
+            <img src="img/m-index/call.png" alt="booking-img">
+        </a>
+    </div>
+
+    <div class="activity-img">
+        <h2>活動照片</h2>
+        <div class="container">
+            <div class="box1">
+                <img src="img/activity-img/pexels-pavel-danilyuk-8111367.jpg" alt="activity-img">
+            </div>
+            <div class="box2">
+                <img src="img/activity-img/200710-fitch-family-game-jm-1050.webp" alt="activity-img">
+                <img src="img/activity-img/istockphoto-484050552-612x612.jpg" alt="activity-img">
+                <img src="img/activity-img/istockphoto-1364431292-612x612.jpg" alt="activity-img">
+                <img src="img/activity-img/pexels-kevin-malik-8762824.jpg" alt="activity-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="env">
+        <h2>店內環境</h2>
+        <div class="container">
+            <div class="box">
+                <img src="img/env/1684308993300-0d2a33f4f1f04376addf432872ccad3b-800x533.jpg" alt="env-img">
+            </div>
+            <div class="box">
+                <img src="img/env/restaurant-1837150_1280.jpg" alt="env-img">
+            </div>
+            <div class="box drinks">
+                <img src="img/env/pexels-karolina-grabowska-4887249.jpg" alt="env-img">
+                <img src="img/env/pexels-ron-lach-8880727.jpg" alt="env-img">
+            </div>
+            <div class="box">
+                <img src="img/env/pexels-kevin-bidwell-1373100.jpg" alt="env-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo/fire.svg" alt="logo">
+                </a>
+            </div>
+            <div class="address item">
+                <div class="time">
+                    <p>地址： 320桃園市中壢區復興路46號9樓</p>
+                    <p>營業時間： 09：00～22：30 (每周二公休)</p>
+                    <p>電話： 03-425 8183</p>
+                </div>
+            </div>
+            <div class="list item">
+                <ul>
+                    <li><a href="#">員工專區</a></li>
+                    <li><a href="#">人才招募</a></li>
+                    <li><a href="#">加盟合作</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">意見箱</a></li>
+                    <li><a href="#">使用者條款</a></li>
+                    <li><a href="#">隱私權政策</a></li>
+                </ul>
+            </div>
+            <div class="community item">
+                <a href="#"><img src="img/footer/facebook.svg" alt="facebook"></a>
+                <a href="#"><img src="img/footer/instagram.svg" alt="instagram"></a>
+                <a href="#"><img src="img/footer/twitter.svg" alt="twitter"></a>
+                <a href="#"><img src="img/footer/line.svg" alt="line"></a>
+            </div>
+        </div>
+        <div class="m-community">
+            <a href="#"><img src="img/footer/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="img/footer/instagram.svg" alt="instagram"></a>
+            <a href="#"><img src="img/footer/twitter.svg" alt="twitter"></a>
+            <a href="#"><img src="img/footer/line.svg" alt="line"></a>
+        </div>
+        <div class="tibame">
+            本網站為緯育TibaMe【第86期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。
+        </div>
+    </div>
+
+    <div id="scrollToTop" class="scroll-to-top">Top
+    </div>
+
+    <!--點擊預購按鈕-->
+    <script>
+        let btn = document.querySelectorAll('button');
+            function clickHandle(e){
+                const count = prompt('請輸入需要的數量:');
+                if (count!== null && /^[1-9]\d*$/.test(count)){
+                alert('已預購成功!');
+                this.innerText = '預購完成';
+                this.style.background = "green";
+                this.style.color = "white";
+                this.removeEventListener('click', clickHandle, false);
+                e.stopPropagation();
+                }
+                else{
+                    alert('請輸入有效的整數!')
+                }
+            };
+
+            btn.forEach(
+                button => {
+                    button.addEventListener('click', clickHandle);
+            });
+    </script>
+
+
+
+
+    <!-- 關閉廣告 -->
+    <script>
+        $(document).ready(function(){
+            $('.full-screen').click(function(){
+                $('.full-screen').fadeOut();
+            })
+        })
+    </script>
+
+    <!-- 到頁首 -->
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        document.getElementById('scrollToTop').addEventListener('click', scrollToTop);
+    </script>
+
+    <!-- 上輪播 -->
+    <script>
+        var owl = $('.slide');
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 3000,
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [1000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    </script>
+
+    <!-- 下輪播 -->
+    <script>
+        $('.owl-act').owlCarousel({
+            loop:true,
+            margin:5,
+            nav:true,
+            autoplay:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

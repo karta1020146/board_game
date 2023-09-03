@@ -1,0 +1,129 @@
+@media screen  and (max-width:767px) {
+    .location .container-iframe .map,
+    .location .container-iframe .time{
+        display: none;
+    }
+
+    .location{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .m-container{
+        background-color:#f8f0eb;
+        width: 100%;
+        display: flex;
+    }
+    #f8f0eb
+    .m-container img{
+        width: 22%;
+    }
+
+    .m-container .m-address{
+        border-right:1px solid ;
+        border-left:1px solid ;
+    }
+
+    .m-container div{
+        font-weight: bold;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+        width: 33%;
+        box-sizing: border-box;
+    }
+
+    .m-container div p{
+        margin: 15px 0;
+    }
+
+    .m-container span{
+        font-size: 16px;
+    }
+
+    .location .container-iframe{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .m-map{
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        border: 1px solid;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .m-map iframe{
+        margin: auto;
+        width: 100%;
+        border-radius: 5px;
+        vertical-align: bottom;
+    }
+
+    h3{
+        margin: 5px 0;
+        font-size: 30px;
+    }
+
+    .location .ways{
+        width: 90%;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color:#f8f0eb;
+    }
+
+    .ways li{
+        font-size: 18px;
+    }
+
+    li span{
+        padding-right: 3px;
+    }
+
+    hr{
+        margin: 3px 0;
+    }
+}
+
+@media screen and (max-width:415px) {
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 75px;
+    }
+
+    h3{
+        margin: 15px 0 0;
+    }
+
+    .m-container{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .m-container img{
+        width: 18%;
+    }
+
+    .m-container div{
+        width: 80%;
+        margin: auto;
+        padding: 20px 0;
+    }
+
+    .m-container .m-address{
+        border-top:1px solid ;
+        border-bottom:1px solid ;
+        border-right:0px;
+        border-left:0px;
+    }
+
+    .m-map{
+        margin: 5px auto;
+    }
+}
