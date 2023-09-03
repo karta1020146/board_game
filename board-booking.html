@@ -7,7 +7,7 @@
     <title>board_game_booking</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="header.css">
-    <script src="jQuery/js/jquery-3.7.0.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
     <link rel="stylesheet" href="booking-style.css">
     <link rel="stylesheet" href="rwd-hf.css">
     <link rel="stylesheet" href="rwd-booking.css">
@@ -142,11 +142,11 @@
                         </div>
                     </div>
                     <div class="btn">
-                        <button type="submit">立即預約</button>
+                        <button class="add" type="submit">立即預約</button>
                     </div>
                 </div>
                 <div class="m-btn">
-                    <button type="submit">
+                    <button class="add" type="submit">
                         送出
                     </button>
 
@@ -229,6 +229,25 @@
 
     <div id="scrollToTop" class="scroll-to-top">Top
     </div>
+
+    <script>
+        let btn = document.querySelectorAll('.add');
+            function clickHandle(e){
+                this.innerText = '預約成功';
+                this.style.background = "green";
+                this.style.color = "white";
+                e.stopPropagation();
+                e.preventDefault();
+                };
+
+            btn.forEach(
+                button => {
+                    button.addEventListener('click', clickHandle);
+                }
+            );
+    </script>
+
+
 
     <script>
         function scrollToTop() {

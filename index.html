@@ -165,7 +165,7 @@
                         <p>《閉門恐懼》是一款令人毛骨悚然的桌上遊戲。這個遊戲帶領玩家進入一個充滿恐怖和神秘的世界。遊戲的目標是探索一扇神秘的門，這扇門據說通向另一個恐怖的維度。</p>
                     </div>
                     <div class="date">
-                        <p><span>預定發售：2023年10月</span><button>立即預購</button></p>
+                        <p><span>預定發售：2023年10月</span><button class="add">立即預購</button></p>
                     </div>
                 </div>
                 <div class="m-data">
@@ -177,7 +177,7 @@
                             <span>預定發售：2023年10月</span>
                         </p>
                         <p>
-                            <button>立即預購</button>
+                            <button class="add">立即預購</button>
                         </p>
                     </div>
                 </div>
@@ -198,7 +198,7 @@
                         <p>在《忍者傳奇》中，玩家將面對各種挑戰，包括與其他浪人的對決以及解謎和探索古老的神秘遺跡。遊戲中充滿了策略和决策的考驗，玩家需要智慧和勇氣來面對困難並取得勝利。</p>
                     </div>
                     <div class="date">
-                        <p><span>預定發售：2023年11月</span><button>立即預購</button></p>
+                        <p><span>預定發售：2023年11月</span><button class="add">立即預購</button></p>
                     </div>
                 </div>
                 <div class="m-data">
@@ -210,7 +210,7 @@
                             <span>預定發售：2023年11月</span>
                         </p>
                         <p>
-                            <button>立即預購</button>
+                            <button class="add">立即預購</button>
                         </p>
                     </div>
                 </div>
@@ -345,7 +345,7 @@
 
     <!--點擊預購按鈕-->
     <script>
-        let btn = document.querySelectorAll('button');
+        let btn = document.querySelectorAll('.add');
             function clickHandle(e){
                 const count = prompt('請輸入需要的數量:');
                 if (count!== null && /^[1-9]\d*$/.test(count)){
@@ -364,7 +364,8 @@
             btn.forEach(
                 button => {
                     button.addEventListener('click', clickHandle);
-            });
+                }
+            );
     </script>
 
 

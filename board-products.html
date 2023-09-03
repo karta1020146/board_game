@@ -154,7 +154,7 @@
                             <h3>魔幻迷宮</h3>
                             <h4>(英文版)(恐怖)</h4>
                             <p>$ 750</p></a>
-                            <button>加入購物車</button>
+                            <button class="add">加入購物車</button>
                         </div>
                     </div>
                     <div class="card">
@@ -169,7 +169,7 @@
                             <h3>時間旅人</h3>
                             <h4>(英文版)(科幻)</h4>
                             <p>$ 700</p> </a>
-                            <button>加入購物車</button>
+                            <button class="add">加入購物車</button>
                         </div>
                     </div>
                     <div class="card">
@@ -181,7 +181,7 @@
                             <h3>靈媒</h3>
                             <h4>(英文版)(恐怖)</h4>
                             <p>$ 600</p></a>
-                            <button>加入購物車</button>
+                            <button class="add">加入購物車</button>
                         </div>
                     </div>
                     <div class="card">
@@ -193,7 +193,7 @@
                             <h3>寶藏獵人</h3>
                             <h4>(中文版)(戰鬥)</h4>
                             <p>$ 550</p></a>
-                            <button>加入購物車</button>
+                            <button class="add">加入購物車</button>
                         </div>
                     </div>
                     <div class="card">
@@ -205,7 +205,7 @@
                             <h3>進化之路</h3>
                             <h4>(英文版)(生存)</h4>
                             <p>$ 750</p></a>
-                            <button>加入購物車</button>
+                            <button class="add">加入購物車</button>
                         </div>
                     </div>
                     <div class="card">
@@ -217,7 +217,7 @@
                             <h3>謎團追尋</h3>
                             <h4>(中文版)(解謎)</h4>
                             <p>$ 560</p></a>
-                            <button>加入購物車</button>
+                            <button class="add">加入購物車</button>
                         </div>
                     </div>
                     <div class="card">
@@ -229,7 +229,7 @@
                             <h3>星際征途</h3>
                             <h4>(中文版)(科幻)</h4>
                             <p>$ 700</p></a>
-                            <button>加入購物車</button>
+                            <button class="add">加入購物車</button>
                         </div>
                     </div>
                     <div class="card">
@@ -241,7 +241,7 @@
                             <h3>絕境求生</h3>
                             <h4>(中文版)(生存)</h4>
                             <p>$ 990</p></a>
-                            <button>加入購物車</button>
+                            <button class="add">加入購物車</button>
                         </div>
                     </div>
                 </div>
@@ -324,7 +324,7 @@
 
         <!--點擊加入購物車按鈕-->
         <script>
-            let btn = document.querySelectorAll('button');
+            let btn = document.querySelectorAll('.add');
                 function clickHandle(e){
                     const count = prompt('請輸入需要的數量:');
                     if (count!== null && /^[1-9]\d*$/.test(count)){
