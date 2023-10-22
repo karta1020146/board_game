@@ -38,22 +38,30 @@ h3 {
 .section a{
     display: flex;
     text-decoration: none;
-    color: black;
+    color: rgb(60, 60, 60);
     font-weight: bolder;
 }
 
 .news .article .pic {
     margin: auto;
     width: 25%;
+    height: 210px;
     border: 2px solid;
     border-radius: 10px;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .news .pic img{
     border-radius: 6px;
-    width: 100%;
+    width: 107%;
     vertical-align: bottom;
+    opacity: .5;
+}
+.section a:hover .pic img{
+    width: 110%;
+    transition: .5s;
+    opacity: 1;
 }
 
 .news .detail {
@@ -71,7 +79,8 @@ h3 {
 }
 
 .section a:hover {
-    color: gray;
+    color: black;
+    transition: .5s;
 }
 
 .bgi-last {

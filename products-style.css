@@ -108,6 +108,7 @@ h3{
 .products .items{
     border-radius: 10px;
     width: 62.5%;
+    margin: 0 10px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;

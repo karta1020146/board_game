@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>play_board_game</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <script src="jQuery/js/jquery-3.7.0.js"></script>
+    <!-- <script src="jQuery/js/jquery-3.7.0.js"></script> -->
     <link rel="stylesheet" href="index-style.css">
 
     <!-- 輪播 -->
@@ -296,6 +296,12 @@
         </div>
     </div>
 
+    <div class="weather-info">
+        <select id="locationSelect"></select>
+        <p id="temperature">Temperature: Loading...</p>
+        <p id="description">Description: Loading...</p>
+    </div>
+
     <div class="footer">
         <div class="container">
             <div class="logo">
@@ -429,6 +435,69 @@
             }
         })
     </script>
+
+<script>
+    const taiwanCounties = [
+        "基隆市", "台北市", "新北市", "桃園市", "新竹市", "新竹縣",
+        "苗栗縣", "台中市", "彰化縣", "南投縣", "雲林縣", "嘉義市",
+        "嘉義縣", "台南市", "高雄市", "屏東縣", "台東縣", "花蓮縣",
+        "宜蘭縣", "澎湖縣", "金門縣", "連江縣"
+    ];
+
+    const locationSelect = document.getElementById('locationSelect');
+    const temperatureDisplay = document.getElementById('temperature');
+    const descriptionDisplay = document.getElementById('description');
+
+    // 創建選項
+    taiwanCounties.forEach(county => {
+        const option = document.createElement('option');
+        option.value = county;
+        option.textContent = county;
+        locationSelect.appendChild(option);
+    });
+
+    // 函數用於發起 API 請求和更新顯示
+    function fetchAndDisplayWeatherData(selectedLocation) {
+        // 更新 API 請求 URL
+        const apiUrl = `https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWA-AC3ACE54-A9AF-45AF-B6B2-CFD4452C90A1&format=JSON&locationName=${selectedLocation}`;
+
+        // 發起 API 請求
+        fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            // 在這裡處理回傳的資料
+            const weatherElements = data.records.location[0].weatherElement;
+
+            let temperature = "N/A";
+            let description = "N/A";
+            let locationName = data.records.location[0].locationName;
+            
+            for (const element of weatherElements) {
+                if (element.elementName === "Wx") {
+                    description = element.time[0].parameter.parameterName;
+                } else if (element.elementName === "MinT") {
+                    temperature = element.time[0].parameter.parameterName + "°C";
+                }
+            }
+
+            // 更新顯示的資訊
+            temperatureDisplay.textContent = `氣溫: ${temperature}`;
+            descriptionDisplay.textContent = `天氣: ${description}`;
+        })
+        .catch(error => {
+            console.error('Error fetching weather data:', error);
+        });
+    }
+
+    // 初始載入時顯示基隆市的資料
+    fetchAndDisplayWeatherData('基隆市');
+
+    // 事件監聽器，當選項改變時發起新的 API 請求
+    locationSelect.addEventListener('change', function () {
+        const selectedLocation = this.value; // 取得所選的縣市
+        fetchAndDisplayWeatherData(selectedLocation);
+    });
+</script>
 
 </body>
 
